@@ -1,9 +1,9 @@
 package com.example.dogsmvvm.domain
 
 import com.example.dogsmvvm.data.DogRepository
-import com.example.dogsmvvm.data.model.Dog
+import com.example.dogsmvvm.data.model.DogModel
 
 class GetListDogs {
     private val repository = DogRepository()
-    suspend operator fun invoke(): Any = repository.getDogs()
+    suspend operator fun invoke(): DogModel? = repository.getDogs()
 }

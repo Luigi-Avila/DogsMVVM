@@ -10,10 +10,8 @@ class DogsViewModel: ViewModel() {
 
     var getListDogs = GetListDogs()
 
-
     fun onCreate(){
         viewModelScope.launch {
-            Log.i("Hola", "Mundo")
             getListDogs()
         }
     }
